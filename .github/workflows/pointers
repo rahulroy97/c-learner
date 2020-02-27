@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main() {
+
+int player1 = 4;
+int player2 = 7;
+int player3[10] = {4};
+
+int *ip,*ip1,*ip2;
+ip = &player1;
+ip1 = &player2;
+ip2 = player3;
+
+printf("the value at %x is : %d\n" ,&player1,*ip);
+printf("the value at %x is : %d\n" ,&player2,*ip1);
+printf("the value at %x is : %d\n" ,&player3,*ip2);
+
+getch();
+return 0;
+
+}
