@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <conio.h>
+
+struct player {
+char playername[50];
+char stagelevel[50];
+int score;
+};
+
+int main() {
+
+struct player john;
+struct player janardhan;
+
+strcpy(john.playername,"john keller");
+strcpy(john.stagelevel,"kings room");
+john.score = 200;
+
+printf("the player %s is in %s level with high score of %d\n",john.playername,john.stagelevel,john.score);
+
+strcpy(janardhan.playername,"tiwary");
+strcpy(janardhan.stagelevel,"devil's room");
+janardhan.score = 2000;
+
+printf("the player %s is in %s level with high score of %d\n",janardhan.playername,janardhan.stagelevel,janardhan.score);
+
+getch();
+return 0;
+}
